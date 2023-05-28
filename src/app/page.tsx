@@ -1,8 +1,8 @@
 import Papa from "papaparse";
 
 type Link = {
-  label: string;
-  url: string;
+  Label: string;
+  URL: string;
 };
 
 async function getLinks() {
@@ -32,8 +32,8 @@ export default async function Home() {
       <h1>Daniela</h1>
       <ul>
         {links.map((link) => (
-          <li key={link.url}>
-            <a href={link.url}>{link.label}</a>
+          <li key={link.URL}>
+            <a href={link.URL}>{link.Label}</a>
           </li>
         ))}
       </ul>
